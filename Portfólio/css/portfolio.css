@@ -1,0 +1,237 @@
+body{
+	font-size: 16px;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 300;
+	background: url("18410.jpg");
+	background-size: cover;
+	color: #214FCE;
+}
+
+*, *: :before,*: :after;{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*----lecek----*/
+
+	body{
+		display: grid;
+		grid-template-areas: 
+		"fej"
+		"tartalom"
+		"láb"
+		;
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh;
+
+	}
+
+	header{
+		/*background-color:grey;*/
+		grid-area: fej;
+	}
+	header div img{
+		max-height: 4rem;
+		border-radius: 50%;
+	}
+	header div img:hover{
+		-webkit-box-shadow: 0px 0px 2px 3px rgba(52,167,209,0.76);
+		-moz-box-shadow: 0px 0px 2px 3px rgba(52,167,209,0.76);
+		box-shadow: 0px 0px 2px 3px rgba(52,167,209,0.76);
+	}
+	main{
+		/*background-color:blue;*/
+		grid-area: tartalom;
+
+	}
+	footer{
+		/*background-color:purple;*/
+		grid-area: láb;
+	}
+
+/*----lecek----*/
+
+/*----ált----*/
+
+
+	a{
+		text-decoration: none;
+		color:#000000;
+	}
+	hr{
+		display:inline-block;
+		width: 30%;
+		border-left: none;
+		border-right: none;
+		border-top: none;
+		border-bottom: 5px solid lightblue;
+		margin:0;
+		padding: 0;
+	}
+
+/*----ált----*/
+
+/*----lemenu----*/
+	#lenyilo_menu{
+		position: absolute;
+		left: 3rem;
+		top:4rem;
+		display: none;
+		
+		border: 1px solid rgba(0,0,0,2);
+		border-radius: 8px;
+		text-align: left;
+		-webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.55);
+		-moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.55);
+		box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.55);
+		max-height: max-content;
+		overflow: hidden;
+	}
+	#lenyilo_menu.latszodik{
+		display:block;
+	}
+	.almenu{
+		padding-left: 1rem;
+		padding-right: 1rem;
+		line-height: 2.5rem;
+		background-color:white;
+	}
+	.almenu:hover{
+		cursor: pointer;
+		font-size:1.1rem;
+		text-decoration:underline;
+	}
+
+/*----lemenu----*/
+
+/*----kozep_cim----*/
+	main.center{
+		display: grid;
+		grid-template-rows: minmax(1rem, 1fr) max-content minmax(1rem, 1fr);
+		grid-template-columns: minmax(1rem, 1fr) 
+		minmax(288px, 584px) minmax(1rem, 1fr);
+	}
+	.portfolio{
+		grid-row: 2/3;
+		grid-column: 2/3;
+		font-size: 2rem;
+		transform: translateY(-10rem);
+	}
+	.nev{
+		font-size: 6rem;
+	}
+	.nev p{
+		margin:0;
+		padding-left: 5rem;
+	}
+	.portfolio p{
+		margin: 0;
+	}
+/*----kozep_cim----*/
+
+/*----kozep_szoveg----*/
+	.cim1 {
+		padding-left: 27rem;
+		margin:0;
+		font-size: 3rem;
+		transform: translateY(1.7rem);
+	}
+	.kozep_szoveg{
+		transform: translateX(4rem);
+		max-width: 40%;
+		border: 2px solid black;
+		border-radius: 4px;
+		font-size: 1.2rem;
+		padding: 0.5rem;
+		margin: 0;
+	}
+	
+/*----kozep_szoveg----*/
+
+/*----memes----*/
+	.memes_grid_racs{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+		grid-gap: 5rem;
+		margin-right: 3rem;
+		margin-left: 3rem;
+		margin-top: 3rem;
+	}
+
+	.kartya .meme{
+		background-color: rgba(0,0,0,.03);
+		text-align: center;
+	}
+	.kartya .meme img{
+		margin:0;
+		object-fit: contain;
+	}
+
+	.kartya .meme img:hover{
+		-webkit-box-shadow: 0px 0px 3px 3px rgba(168,168,168,1);
+		-moz-box-shadow: 0px 0px 3px 3px rgba(168,168,168,1);
+		box-shadow: 0px 0px 3px 3px rgba(168,168,168,1);
+	}
+	.cim2{
+		font-size: .8rem;
+		margin:0;
+		margin-top: 0.5rem;
+		margin-left: .3rem; 
+	}
+	.h2{
+		display:inline-block;
+		width: 100%;
+		border-left: none;
+		border-right: none;
+		border-top: none;
+		border-bottom: 5px solid lightblue;
+		margin:0;
+	}
+	.kartya p{
+		padding: 0;
+		margin:0;
+		font-size: .60rem;
+	}
+/*----memes----*/
+
+/*----tervek----*/
+	.cim3{
+	
+		margin-left: 20rem; 
+		font-size: 3rem;
+		object-fit: contain;
+	
+	}
+	.h3{
+		display:inline-block;
+		width: 37.8%;
+		border-left: none;
+		border-right: none;
+		border-top: none;
+		border-bottom: 5px solid lightblue;
+		margin:0;
+	}
+	.kozep_szoveg2{
+		transform: translateX(40rem);
+		max-width: 40%;
+		border: 2px solid black;
+		border-radius: 4px;
+		font-size: 1.2rem;
+		padding: 1rem;
+		margin-top: 3rem;
+	}
+	h1{
+		font-size: 2rem;
+	}
+	.vege{
+		margin-top: 5rem;
+	}
+	.web{
+		font-size:1.3rem;
+	}
+/*----tervek----*/
